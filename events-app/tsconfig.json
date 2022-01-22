@@ -1,5 +1,8 @@
 {
   "compilerOptions": {
+    "rootDir": "./src",
+    "outDir": "./build",
+    "baseUrl": "src",
     "target": "es5",
     "lib": [
       "dom",
@@ -20,6 +23,17 @@
     "noEmit": true,
     "jsx": "react-jsx"
   },
+  "filesGlob": [
+    "src/**/*.ts",
+    "src/**/*.tsx"
+  ],
+  "exclude": [
+    "__tests__",
+    "index.android.js",
+    "index.ios.js",
+    "build",
+    "node_modules"
+  ],
   "include": [
     "src"
   ]
