@@ -1,0 +1,14 @@
+.container {
+  padding: 0 15px;
+}
+
+.add__button {
+  width: 100%;
+  margin: 20px 0;
+  padding: 0 10px;
+  font-size: 18px;
+  &:hover {
+    background-color: rgb(46, 32, 97);
+    color: rgb(39, 104, 201);
+  }
+}

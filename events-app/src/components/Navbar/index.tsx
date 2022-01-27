@@ -23,9 +23,11 @@ const Navbar: FC = () => {
     <Layout>
       <Header className="header">
         <Row justify='space-between'>
-          <div >
+          <div>
             <img src={Logo} alt="logo" />
           </div>
+
+          <div className={styles.app__name}>EVENTS APP</div>
 
           <div className={styles.user__container}>
             {isAuth && (

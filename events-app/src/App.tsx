@@ -3,9 +3,9 @@ import AppRouter from './components/AppRouter';
 import Navbar from 'components/Navbar';
 import { useDispatch } from 'react-redux';
 import { Layout } from 'antd';
-import './App.scss';
 import { AuthActionCreators } from './store/reducers/auth/action-creators';
 import { IUser } from './models/IUser';
+import './App.scss';
 
 const App: FC = () => {
   const dispatch = useDispatch()
