@@ -1,6 +1,6 @@
 import { Layout, Row } from 'antd';
 import React, { FC } from 'react';
-import LoginForm from './../components/LoginForm/index';
+import LoginForm from 'components/LoginForm/index';
 
 const Login: FC = () => {
   return (

@@ -1,4 +1,4 @@
-import { IUser } from './../../../models/IUser';
+import { IUser } from 'models/IUser';
 import { AppDispatch } from '../../index';
 import {
   AuthActionEnum,
@@ -7,7 +7,7 @@ import {
   SetIsLoadingAction,
   SetUserAction
 } from './types';
-import UserService from './../../../api/UserService';
+import UserService from 'api/UserService';
 
 export const AuthActionCreators = {
   setUser: (user: IUser): SetUserAction => ({
@@ -37,8 +37,8 @@ export const AuthActionCreators = {
         if (mockUser) {
           localStorage.setItem('auth', 'true');
           localStorage.setItem('username', mockUser.username);
-          dispatch(AuthActionCreators.setAuth(true));
           dispatch(AuthActionCreators.setUser(mockUser));
+          dispatch(AuthActionCreators.setAuth(true));
         } else {
           dispatch(AuthActionCreators.setError('Login or password is not correct!'));
         }
